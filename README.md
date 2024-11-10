@@ -78,7 +78,7 @@ La struttura `menuItems` è completamente personalizzabile. Ogni elemento princi
 
 ### Responsive Design
 
-Il menu è ottimizzato per adattarsi a schermi di piccole dimensioni, compresi laptop compatti, garantendo che il layout rimanga utilizzabile e accessibile anche per dispositivi mobili o schermi più piccoli. 
+Il menu è ottimizzato per adattarsi a schermi di piccole dimensioni, inclusi laptop compatti, garantendo un layout utilizzabile e accessibile anche su schermi ridotti. **Attualmente, il menu non è completamente ottimizzato per schermi di telefono**, ma è in fase di sviluppo una versione mobile-friendly per garantire un’esperienza utente ideale anche su dispositivi mobili.
 
 --- 
 
