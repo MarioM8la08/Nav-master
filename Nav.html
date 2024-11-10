@@ -1,11 +1,74 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Nav</title>
     <link rel="stylesheet" href="Nav.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Electrolize&family=Tilt+Neon&family=Zen+Dots&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" media="(max-width: 800px)" href="DevNav.css">
 </head>
 <body>
-
+    <nav>
+        <div class="title">
+            <h1 title="By Mario Mottola">Nav Master</h1>
+            <h6 title="By Mario Mottola">By Mario Mottola</h6>
+        </div>
+        <ul>
+            <li>
+                <button id="btn1">
+                    <h1 id="1"></h1>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown-content" id="dropdown1"></div>
+                </button>
+            </li>
+            <li>
+                <button id="btn2">
+                    <h1 id="2"></h1>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown-content" id="dropdown2"></div>
+                </button>
+            </li>
+            <li>
+                <button id="btn3">
+                    <h1 id="3"></h1>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown-content" id="dropdown3"></div>
+                </button>
+            </li>
+            <li>
+                <button id="btn4">
+                    <h1 id="4"></h1>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown-content" id="dropdown4"></div>
+                </button>
+            </li>
+            <li>
+                <button id="btn5">
+                    <h1 id="5"></h1>
+                    <i class="fa-solid fa-caret-down"></i>
+                    <div class="dropdown-content" id="dropdown5"></div>
+                </button>
+            </li>
+        </ul>
+        <section class="user">
+            <button>
+                <i class="fa-solid fa-user"></i>
+                <h1 id="utente">11290AA</h1>
+            </button>
+        </section>
+        <button  id="Hamburger" onclick="loadPage('../Devmenu/Devmenu.html', '../Devmenu/Devmenu.css')" class="Hamburger" Open="false">
+            <div id="lineA"></div>
+            <div id="lineB"></div>
+            <div id="lineC"></div>
+        </button>
+        <div class="logo">
+            <h1>LOGO</h1>
+        </div>
+    </nav>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/3dadc60636.js" crossorigin="anonymous"></script>
 </body>
 </html>
