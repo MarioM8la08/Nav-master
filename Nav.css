@@ -157,7 +157,7 @@ nav h6{
     }
 }
 @media screen and (max-width: 1280px) {
-    h1#utente{
+    .nick{
         display: none;
     }
 }
