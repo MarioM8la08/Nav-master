@@ -13,7 +13,7 @@ nav {
     backdrop-filter: blur(10px);
     position: sticky;
     display: inline-flex;
-    gap: 2vw;
+    gap: 5vw;
     justify-content: center;
 }
 nav ul {
