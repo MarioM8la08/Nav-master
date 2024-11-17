@@ -4,7 +4,7 @@
     font-family: "Tilt Neon", sans-serif;
 }
 body{
-    background-color: #070707;
+    background-color: #0c0c0c;
 }
 nav {
     width: 100%;
@@ -13,7 +13,7 @@ nav {
     backdrop-filter: blur(10px);
     position: sticky;
     display: inline-flex;
-    gap: 5vw;
+    gap: 2vw;
     justify-content: center;
 }
 nav ul {
@@ -37,6 +37,10 @@ nav ul li button {
     align-items: center;
     transition: 0.7s;
 }
+#Hamburger{
+    background-color: transparent;
+    transition: 0.7s;
+}
 nav ul li button:hover {
     background-color: #1e1e1e;
     color: #fff;
@@ -50,6 +54,7 @@ nav ul li button:hover {
     top: 100%;
     left: 0;
     width: 100%;
+    box-shadow: 0 10px 10px 0 rgba(255, 255, 255, 0.5);
     z-index: 10;
     transition: 0.7s;
     border-bottom-left-radius: 20px;
@@ -58,7 +63,6 @@ nav ul li button:hover {
 }
 .dropdown-content button {
     width: 100%;
-    height: 50px;
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
@@ -99,6 +103,8 @@ nav h6{
 }
 .title {
     height: 100%;
+    border: none;
+    background-color: transparent;
     color: antiquewhite;
     display: flex;
     align-items: center;
@@ -107,6 +113,10 @@ nav h6{
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
+}
+.title:hover {
+    text-shadow: 0 0 10px white;
+    transition: 0.7s;
 }
 .title h1 {
     font-style: normal;
@@ -132,12 +142,15 @@ nav h6{
 .fa-user{
     font-size: 30px;
 }
-.logo h1{
+.logo img{
     transition: 0.7s;
-    font-size: 40px;
-    color: #aaaaaa;
+    height: 30px;
 }
 .logo{
+    color: aliceblue;
+    font-weight: lighter;
+    cursor: pointer;
+    text-shadow: 0 0 10px white;
     display: inline-flex;
     align-items: center;
 }
@@ -152,8 +165,8 @@ nav h6{
     }
 }
 @media screen and (max-width: 1400px) {
-    .logo h1 {
-        font-size: 20px;
+    .logo img {
+        height: 20px;
     }
 }
 @media screen and (max-width: 1280px) {
@@ -180,102 +193,52 @@ nav h6{
         font-size: 13px;
     }
 }
-@media screen and (max-width: 800px) {
-    nav ul {
-        display: none;
-    }
-    .user{
-        display: none;
-    }
-    .logo{
-        display: none;
-    }
-    .logo h1 {
-        position: absolute;
-        right: 0;
-        margin-right: 10px;
-        font-size: 20px;
-    }
-    nav{
-        justify-content: space-between;
-    }
-}
-/*Inizio menu telefono*/
-.Hamburger{
-    display: none;
-    background-color: transparent;
-    border: none;
-    outline: none;
-}
-.Hamburger div{
-    width: 40px;
-    height: 3px;
-    background-color: white;
-}
-@keyframes rotate45 {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(45deg) translateY(-18px);
-    }
-}
-@keyframes return45 {
-    0% {
-        transform: rotate(45deg) translateY(-18px);
-    }
-    100% {
-        transform: rotate(0) translateY(0);
-    }
-}
-@keyframes rotateMinus45 {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(-45deg) translateY(19px) translateX(-1px);;
-    }
-}
-@keyframes returnMinus45 {
-    0% {
-        transform: rotate(-45deg) translateY(19px) translateX(-1px);
-    }
-    100% {
-        transform: rotate(0deg) translateY(0) translateX(0);
-    }
-}
-.rotate-left {
-    animation: rotate45 0.2s ease-in-out forwards;
-}
-.rotate-right {
-    animation: rotateMinus45 0.2s ease-in-out forwards;
-}
-.return-left {
-    animation: return45 0.2s ease-in-out forwards;
-}
-.return-right {
-    animation: returnMinus45 0.2s ease-in-out forwards;
-}
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+
+/*Main*/
+main{
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
 }
 
-.element-fade-out {
-    animation: fadeOut 0.2s ease-in-out forwards;
+main button{
+    width: 220px;
+    padding: 15px;
+    height: 300px;
+    border: none;
+    align-items: center;
+    display: flex;
+    background-color: #202020;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: 0.7s;
 }
-.element-fade-in {
-    animation: fadeIn 0.2s ease-in-out forwards;
+main button:hover{
+    transition: 0.7s;
+    background-color: #323232;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
+}
+main button img{
+    opacity: 0.5;
+    width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+main button:hover img{
+    opacity: 1;
+    transition: 0.7s;
+}
+main button h1{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Tilt Neon", sans-serif;
+}
+.Dev{
+    display: none;
 }

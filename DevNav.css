@@ -1,37 +1,12 @@
 /* CSS */
-.no-scroll {
-    overflow: hidden !important;
-}
-*{
-    margin: 0;
-    padding: 0;
-    overflow-x: hidden;
-}
-.hidden{
+/*In development*/
+nav, main{
     display: none;
 }
-nav{
-    position: fixed;
-    overflow-y: hidden;
-}
-
-.Navbar{
-    width: 20%;
-    justify-content: right;
-}
-.fa-bars{
+.Dev{
     display: block;
-    margin-right: 2vw;
-    opacity: 1;
-}
-.Hamburger{
-    z-index: 10;
-    position: fixed;
-    right: 17px;
-    top: 10px;
-    width: 50px;
-    height: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
 }
