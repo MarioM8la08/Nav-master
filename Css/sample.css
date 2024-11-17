@@ -1,0 +1,6 @@
+/*Mettere davanti ogni proprietà il nome #LoaderContent*/
+#LoaderContent h1{
+    font-style: normal;
+    font-weight: lighter;
+    color: white;
+}
