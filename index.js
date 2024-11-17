@@ -87,19 +87,19 @@ function nav(){
                 button.addEventListener("click", function () {
                     switch (i) {
                         case 0:
-                            CreateCard(CardSupplier);
+                            CreateCard(Card2);
                             break;
                         case 1:
-                            CreateCard(CardEurocargo);
+                            CreateCard(Card3);
                             break;
                         case 2:
-                            CreateCard(CardDaily7020);
+                            CreateCard(Card4);
                             break;
                         case 3:
-                            CreateCard(CardMinibus);
+                            CreateCard(Card5);
                             break;
                         case 4:
-                            CreateCard(CardQuality);
+                            CreateCard(Card6);
                             break;
                     }
                 });
