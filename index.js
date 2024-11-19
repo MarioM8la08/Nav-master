@@ -307,18 +307,6 @@ function nav(){
             }
         }
     }
-    document.querySelectorAll('.dropdown-content').forEach(dropdown => {
-        dropdown.addEventListener('mouseenter', () => {
-            const rect = dropdown.getBoundingClientRect();
-            const viewportWidth = window.innerWidth;
-
-            if (rect.right > viewportWidth) {
-                console.log('dropdown-wrap');
-            } else {
-                console.log('dropdown-no-wrap');
-            }
-        });
-    });
 // Funzione principale
     if (iniNav === 0) {
         AssegnazioneMenu().then(r => console.log("Menu Assegnato"));
