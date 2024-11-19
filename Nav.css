@@ -224,13 +224,11 @@ main button:hover{
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
 }
 main button img{
-    opacity: 0.5;
     width: 100%;
     max-height: 100%;
     object-fit: cover;
 }
 main button:hover img{
-    opacity: 1;
     transition: 0.7s;
 }
 main button h1{
