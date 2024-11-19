@@ -59,24 +59,24 @@ nav ul li button:hover {
     transition: 0.7s;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
+    overflow-y: auto;
     animation: dropdownAnimation 0.5s ease-out forwards;
 }
 .dropdown-content button {
-    width: 100%;
+    width: auto;
+    background-color: #202020;
     padding: 10px;
     cursor: pointer;
     font-size: 20px;
     animation: dropdownAnimation 0.5s ease-out forwards;
 }
-.dropdown-content button:last-child:hover {
-    transition: 0.7s;
-    background-color: #100f3c;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-}
 li:hover .dropdown-content,
 .dropdown-content:hover {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: max-content;
+    max-height: 90vh;
 }
 .dropdown-content button:hover{
     transition: 0.7s;

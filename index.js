@@ -19,7 +19,35 @@ function nav(){
             link: "Example/sample.html",
             ContDrop: [
                 { id: 2.1, title: "Subitem 1", link: "Example/sample.html" },
-                { id: 2.2, title: "Subitem 2", link: "Example/sample.html" }
+                { id: 2.2, title: "Subitem 2", link: "Example/sample.html" },
+                { id: 2.3, title: "Subitem 3", link: "Example/sample.html" },
+                { id: 2.4, title: "Subitem 4", link: "Example/sample.html" },
+                { id: 2.5, title: "Subitem 5", link: "Example/sample.html" },
+                { id: 2.6, title: "Subitem 6", link: "Example/sample.html" },
+                { id: 2.7, title: "Subitem 7", link: "Example/sample.html" },
+                { id: 2.8, title: "Subitem 8", link: "Example/sample.html" },
+                { id: 2.9, title: "Subitem 9", link: "Example/sample.html" },
+                { id: 2.10, title: "Subitem 10", link: "Example/sample.html" },
+                { id: 2.11, title: "Subitem 11", link: "Example/sample.html" },
+                { id: 2.12, title: "Subitem 12", link: "Example/sample.html" },
+                { id: 2.13, title: "Subitem 13", link: "Example/sample.html" },
+                { id: 2.14, title: "Subitem 14", link: "Example/sample.html" },
+                { id: 2.15, title: "Subitem 15", link: "Example/sample.html" },
+                { id: 2.16, title: "Subitem 16", link: "Example/sample.html" },
+                { id: 2.17, title: "Subitem 17", link: "Example/sample.html" },
+                { id: 2.18, title: "Subitem 18", link: "Example/sample.html" },
+                { id: 2.19, title: "Subitem 19", link: "Example/sample.html" },
+                { id: 2.20, title: "Subitem 20", link: "Example/sample.html" },
+                { id: 2.21, title: "Subitem 21", link: "Example/sample.html" },
+                { id: 2.22, title: "Subitem 22", link: "Example/sample.html" },
+                { id: 2.23, title: "Subitem 23", link: "Example/sample.html" },
+                { id: 2.24, title: "Subitem 24", link: "Example/sample.html" },
+                { id: 2.25, title: "Subitem 25", link: "Example/sample.html" },
+                { id: 2.26, title: "Subitem 26", link: "Example/sample.html" },
+                { id: 2.27, title: "Subitem 27", link: "Example/sample.html" },
+                { id: 2.28, title: "Subitem 28", link: "Example/sample.html" },
+                { id: 2.29, title: "Subitem 29", link: "Example/sample.html" },
+                { id: 2.30, title: "Subitem 30", link: "Example/sample.html" }
             ]
         },
         {
@@ -279,6 +307,18 @@ function nav(){
             }
         }
     }
+    document.querySelectorAll('.dropdown-content').forEach(dropdown => {
+        dropdown.addEventListener('mouseenter', () => {
+            const rect = dropdown.getBoundingClientRect();
+            const viewportWidth = window.innerWidth;
+
+            if (rect.right > viewportWidth) {
+                console.log('dropdown-wrap');
+            } else {
+                console.log('dropdown-no-wrap');
+            }
+        });
+    });
 // Funzione principale
     if (iniNav === 0) {
         AssegnazioneMenu().then(r => console.log("Menu Assegnato"));
